@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:05,000
+Compare recordings of the same text. Locate acoustic differences and hear the evidence.
+
+2
+00:00:05,000 --> 00:00:10,000
+This is an edited functional walkthrough, not a continuous screen recording.
+
+3
+00:00:10,000 --> 00:00:17,000
+Two short public-domain weekly addresses supply the reference audio and official transcripts.
+
+4
+00:00:17,000 --> 00:00:24,000
+Three fixed edit levels preserve the same words while changing pace, pauses, local volume or noise.
+
+5
+00:00:24,000 --> 00:00:32,000
+Hashes, actual sample boundaries and time maps accompany each pair. Word times remain model estimates.
+
+6
+00:00:32,000 --> 00:00:40,000
+Listen to the unedited reference. The identical-audio control scores 100 with no alert.
+
+7
+00:00:40,000 --> 00:00:48,000
+The chart follows actual playback. A chosen reference is not a universal rhetorical ideal.
+
+8
+00:00:48,000 --> 00:00:55,000
+The same text now contains a local tempo edit requesting 2.10× dilation. Listen to the changed phrase.
+
+9
+00:00:55,000 --> 00:01:01,000
+The delivery lasts 16.46 seconds, versus 14.84 seconds for the reference.
+
+10
+00:01:01,000 --> 00:01:06,000
+The fixed rubric reports 65.03 reference similarity, with three grounded alerts.
+
+11
+00:01:06,000 --> 00:01:12,000
+Play region replays the selected delivery span: 0.90–2.96 seconds, with its word context.
+
+12
+00:01:12,000 --> 00:01:18,000
+IMPORTANT lasts 0.64 seconds instead of 0.35: 1.87× the reference duration.
+
+13
+00:01:18,000 --> 00:01:24,000
+The advice stays conditional. A deliberate emphasis is a choice, not a diagnosis of speaking ability.
+
+14
+00:01:24,000 --> 00:01:32,000
+The edit inserts 0.95 seconds of silence. Alignment estimates a 0.99-second gap before THE.
+
+15
+00:01:32,000 --> 00:01:42,000
+The reference gap is 0.07 seconds: an estimated extra 0.92 seconds. Edit labels and model times are distinct.
+
+16
+00:01:42,000 --> 00:01:50,000
+The local amplitude multiplier is 0.22. The shared transcript and clip duration stay unchanged.
+
+17
+00:01:50,000 --> 00:02:00,000
+Measured relative energy falls by 12.0 dB after each recording’s median level is removed.
+
+18
+00:02:00,000 --> 00:02:08,000
+The 1.08× tempo request has no matching pace alert. The subtle target is missed.
+
+19
+00:02:08,000 --> 00:02:16,000
+Two off-target volume alerts remain. A non-perfect score does not establish a correct target hit.
+
+20
+00:02:16,000 --> 00:02:23,000
+Biden’s 5 dB SNR edit produces noise alerts, but their intervals cover too little of the exact target.
+
+21
+00:02:23,000 --> 00:02:30,000
+The best matching IoU is 0.224, below the 0.25 target-hit threshold. This pair counts as a miss.
+
+22
+00:02:30,000 --> 00:02:36,000
+A global pitch shift with tempo compensation should not create a local-volume warning.
+
+23
+00:02:36,000 --> 00:02:42,000
+It does here. The OF alert is the single control false alarm, so normalization is not fully robust.
+
+24
+00:02:42,000 --> 00:02:49,000
+The reported target hits are 16/18 moderate or strong cases and 0/10 near-perfect cases.
+
+25
+00:02:49,000 --> 00:02:56,000
+One of six controls has a false alert. All 34 pairs remain visible, including the misses.
+
+26
+00:02:56,000 --> 00:03:04,000
+The predeclared ≥93% / zero-false-alert gate failed. V2 uses known speakers, not a new blind-speaker test.
+
+27
+00:03:04,000 --> 00:03:12,000
+Choose two 0.5–30-second audio files, at most 8 MB each, and the same English transcript.
+
+28
+00:03:12,000 --> 00:03:16,000
+Whisper checks the text, then CTC alignment and acoustic features run on this machine.
+
+29
+00:03:16,000 --> 00:03:20,000
+This is the real processing sequence. No audio is sent to a hosted inference service.
+
+30
+00:03:20,000 --> 00:03:26,000
+The uploaded public example returns 80.47, 46 aligned words and one local-volume region.
+
+31
+00:03:26,000 --> 00:03:32,000
+The server deletes temporary upload files before the reply. Export JSON retains the numerical evidence.
+
+32
+00:03:32,000 --> 00:03:40,000
+Read-only replay reproduces all 34 recorded analyses from their frozen word times.
+
+33
+00:03:40,000 --> 00:03:50,000
+Software replay passed; the experiment gate did not. The six-page report keeps that distinction explicit.
+
+34
+00:03:50,000 --> 00:03:55,000
+Two speakers and controlled edits do not establish general rhetorical or demographic validity.
+
+35
+00:03:55,000 --> 00:04:00,000
+OpenAI Codex assisted with implementation, tests, documentation and demo assembly. No model was trained.
+

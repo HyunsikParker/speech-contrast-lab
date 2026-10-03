@@ -1,0 +1,10 @@
+{
+  "title": "Speech Contrast Lab — Track C functional demo",
+  "description": "A local prototype for Track C of the Multimodal AI Hackathon 2026. It compares two recordings of the same text, explains local acoustic differences and replays the interval behind each alert.\n\nCode, 34 paired recordings and the six-page technical report:\nhttps://github.com/HyunsikParker/speech-contrast-lab\n\nThis edited walkthrough uses actual interface captures and public-domain White House weekly-address excerpts. Playback sequences were captured at 1–2 frames per second. Tempo, pause, volume and noise edits keep the original words; they are test perturbations, not the speakers' original deliveries. No voice was cloned or synthesized.\n\nThe recorded v2 gate failed: 16/18 moderate or strong targets were localized, 0/10 subtle targets were localized, and 1/6 controls raised a false alert. All results remain visible. Reference similarity is not persuasiveness, speaking ability or an official contest score.\n\nOpenAI Codex assisted with implementation, tests, documentation and demo assembly. Whisper and wav2vec2 run locally as frozen pretrained models; no paid API or training is used.\n\nChapters\n00:00 What the prototype does\n00:10 Dataset construction\n00:32 Unedited reference · actual playback capture\n00:48 Strong pace edit · actual playback capture\n01:12 Numerical explanation · captured analysis\n01:24 Pause edit · audio excerpt with captured analysis\n01:42 Local volume edit · audio with captured analysis\n02:00 Near-perfect pace edit · captured analysis\n02:16 Noise localization miss · audio with captured analysis\n02:30 Global pitch control · excerpt with captured analysis\n02:42 All results · captured validation table\n03:04 New upload · actual prepared input\n03:20 New upload · actual returned result\n03:32 Reproducibility and technical report\n03:50 Scope and AI assistance\n",
+  "visibility": "unlisted",
+  "language": "en",
+  "made_for_kids": false,
+  "contains_generated_voice_or_video": false,
+  "ai_assisted_production": true,
+  "video_sha256": "b8d4986bc591140993ee3a684f5a97f45675547ea7297732150ff04fc61abc79"
+}

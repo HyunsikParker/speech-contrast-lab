@@ -1,0 +1,48 @@
+{
+  "protocol_id": "paired-acoustic-stress-v1",
+  "thresholds_frozen_before_holdout_inference": true,
+  "seed": 20261003,
+  "speakers": [
+    {
+      "id": "obama-weekly-20090711",
+      "split": "development",
+      "raw_file": "data/raw/obama-weekly-20090711.mp3",
+      "raw_sha256": "26c94fb6ba836d0ac19d040813c974e39884bd8ff9784b36023051be2c9beb59",
+      "transcript": "This week, we've made important progress toward the goal of bringing about change abroad and change at home. During my visit to Russia, we began the process of resetting relations so that we can address key national priorities like the threat of nuclear weapons and extremism."
+    },
+    {
+      "id": "biden-weekly-20110528",
+      "split": "unseen_speaker_holdout",
+      "raw_file": "data/raw/biden-weekly-20110528.mp3",
+      "raw_sha256": "d8c22a331084e723a122068457acfccad6a03705add568447d4041fd545e51ee",
+      "transcript": "Hello, everyone. I hope you're having a safe and enjoyable Memorial Day Weekend. I've got some good news for us today."
+    }
+  ],
+  "target_word_indices": [4, 9],
+  "pause_before_word_index": 7,
+  "levels": {
+    "pace": [1.08, 1.4, 2.1],
+    "pause": [0.12, 0.4, 0.95],
+    "volume": [0.85, 0.5, 0.22],
+    "roughness": [25, 15, 5]
+  },
+  "controls": ["identical", "global_gain_0.5", "global_pitch_1.15"],
+  "peak_headroom": "Reference clip peak is capped at 0.5 with the exact gain recorded, leaving headroom for noise edits. No clipping or post-edit renormalization.",
+  "label_kind": "Exact DSP edit boundaries; silver model word times are separate.",
+  "success_gate": {
+    "examples": 30,
+    "minimum_moderate_severe_targeted_hit_fraction": 0.75,
+    "maximum_control_false_alerts": 1,
+    "minimum_control_scored_fraction": 1.0,
+    "minimum_baseline_transcript_agreement": 0.90,
+    "minimum_baseline_median_word_probability": 0.15,
+    "maximum_peak_resident_bytes": 4294967296,
+    "maximum_wall_seconds": 900
+  },
+  "evaluation_rules": {
+    "targeted_hit": "A detected region of the injected family has delivery-time IoU >=0.25 with the exact injected interval. Abstentions count as misses.",
+    "near_perfect": "Always report separately; no minimum hit rate. Below-threshold edits are intentionally allowed to be missed.",
+    "false_alert": "Any detected region on a no-flaw control; report pitch control separately, with no claim of broad speaker generalization.",
+    "holdout": "Freeze protocol, comparison thresholds and implementation hashes before either decoding or extracting model features from Biden. No tuning after holdout."
+  }
+}

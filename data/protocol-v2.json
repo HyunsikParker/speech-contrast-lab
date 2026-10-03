@@ -1,0 +1,36 @@
+{
+  "protocol_id": "relative-power-spectral-ratio-v2",
+  "parent": "paired-acoustic-stress-v1",
+  "source_manifest": "data/manifest.json",
+  "source_manifest_sha256": "0f3a8b1301accfa4e4e4eab88b7de39c296d525bc79069df52bf209382b26602",
+  "known_speaker_replay": "Original 30 examples are a repair/development replay, not a fresh blind-speaker test. No word times or waveforms are changed.",
+  "fresh_perturbations": {
+    "kind": "roughness",
+    "snr_db": [
+      20,
+      8
+    ],
+    "seed": 71003,
+    "source_ids": [
+      "obama-weekly-20090711",
+      "biden-weekly-20110528"
+    ],
+    "target_word_indices": [
+      4,
+      9
+    ],
+    "holdout_kind": "Previously ungenerated noise realizations and SNR values on known reference clips; not unseen speakers or transcripts."
+  },
+  "mechanism": "Power-pooled word energy reduces frame-mask median flips. Logarithmic flatness ratio plus periodicity loss detects locally added broadband noise even when absolute flatness is small.",
+  "calibration_scope": "Analytic fixtures and Obama development observations only. Biden source has already been exposed in v1, so no fresh speaker-generalization claim.",
+  "success_gate": {
+    "examples": 34,
+    "moderate_severe_targeted_hit_fraction": 0.93,
+    "fresh_strong_perturbation_hits": 2,
+    "control_false_alerts": 0,
+    "control_scored_fraction": 1.0,
+    "maximum_wall_seconds": 180,
+    "maximum_peak_resident_bytes": 4294967296
+  },
+  "failure_policy": "Preserve the frozen result. No tuning on fresh perturbations or repeating unchanged mechanism."
+}

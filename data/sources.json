@@ -1,0 +1,30 @@
+[
+  {
+    "id": "obama-weekly-20090711",
+    "speaker": "Barack Obama",
+    "date": "2009-07-11",
+    "title": "Weekly Address: President Obama Praises Recovery Act Progress",
+    "audio_url": "https://obamawhitehouse.archives.gov/WeeklyAddress/2009/20090711-OQWAZV/20090711_Weekly_Address.mp3",
+    "transcript_url": "https://obamawhitehouse.archives.gov/the_press_office/Weekly-Address-President-Obama-Praises-Recovery-Act-Progress",
+    "rights_url": "https://obamawhitehouse.archives.gov/video/Weekly-Address-Recovery-and-the-Jobs-of-the-Future/index__q_page=1.html",
+    "rights_label": "Public Domain",
+    "opening_transcript": "This week, we've made important progress toward the goal of bringing about change abroad and change at home.",
+    "development_window_seconds": [
+      0,
+      30
+    ],
+    "holdout_window": "Everything after 30 seconds remains untouched in initial feasibility."
+  },
+  {
+    "id": "biden-weekly-20110528",
+    "speaker": "Joe Biden",
+    "date": "2011-05-28",
+    "title": "Weekly Address: Resurgent American Auto Manufacturers Signal Economy on the Rise",
+    "audio_url": "https://obamawhitehouse.archives.gov/WeeklyAddress/2011/052811-SWRDEQ/052811_WeeklyAddress.mp3",
+    "transcript_url": "https://obamawhitehouse.archives.gov/the-press-office/2011/05/28/weekly-address-resurgent-american-auto-manufacturers-signal-economy-rise",
+    "rights_url": "https://obamawhitehouse.archives.gov/photos-and-video/video/2011/05/28/weekly-address-biden-american-auto-comeback",
+    "rights_label": "Public Domain",
+    "split": "unseen_speaker_holdout",
+    "raw_sha256": "d8c22a331084e723a122068457acfccad6a03705add568447d4041fd545e51ee"
+  }
+]
